@@ -22,8 +22,11 @@ Centos 7
 Note: Because Centos 7 went end of life June 2024, NIM has dropped support also.  For this lab, we can still use Centos 7, but special steps are needed.
 
 Only for the following Centos systems:
+
 ``NGINX Oss - Website 01`` at ip address ``10.1.1.8``
+
 ``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
+
 
 Use the ``WEB SHELL`` link to install Agent manually using the instructions:
 
