@@ -16,7 +16,9 @@ Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/gett
 follows a process that is very similar to installing 
 `NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
 
-Note: Only for Centos, install Agent manually using the instructions.
+Note: Because Centos is deprecated, special steps are needed.
+
+Only for Centos, install Agent manually using the instructions. [Install Agent for Centos](https://docs.nginx.com/nginx-agent/installation-upgrade/installation-oss/#installing-nginx-agent-on-rhel-centos-rocky-linux-almalinux-and-oracle-linux)
 Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
 .. code-block:: nginx
