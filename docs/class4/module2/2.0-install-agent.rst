@@ -92,6 +92,7 @@ Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following 
   config_dirs: "/etc/nginx:/usr/local/etc/nginx:/usr/share/nginx/modules:/etc/nms"
 
 
+and then do ``systemctl restart nginx agent``
 
 Step 1 ( Only if not Centos)
 ------
