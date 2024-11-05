@@ -11,7 +11,7 @@ Install the ``nginx-agent`` and configure it to work with existing NGINX instanc
 Note: Only for Centos, install Agent manually using the instructions.
 Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
-```bash
+``
 #
 # /etc/nginx-agent/nginx-agent.conf
 #
@@ -76,7 +76,7 @@ metrics:
 # OSS NGINX default config path
 # path to aux file dirs can also be added
 config_dirs: "/etc/nginx:/usr/local/etc/nginx:/usr/share/nginx/modules:/etc/nms"
-```
+``
 
 Guide
 =====
