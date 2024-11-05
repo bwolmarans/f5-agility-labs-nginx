@@ -19,8 +19,6 @@ follows a process that is very similar to installing
 Note: Only for Centos, install Agent manually using the instructions.
 Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
-.. code-block:: bash
-
 #
 # /etc/nginx-agent/nginx-agent.conf
 #
