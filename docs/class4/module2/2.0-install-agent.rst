@@ -92,7 +92,7 @@ Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following 
 
 
 
-Step 1
+Step 1 ( Only if not Centos)
 ------
 We are going to use NGINX Plus - 3 Server 10.1.1.9 and install the nginx-agent to manage the NGINX instances running on this host. Access the deployment tab and select the NGINX Plus – 3 Server Access menu then click WEB SHELL.
 
