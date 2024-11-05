@@ -16,6 +16,9 @@ Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/gett
 follows a process that is very similar to installing 
 `NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
 
+Centos
+------
+
 Note: Because Centos is deprecated, special steps are needed.
 
 Only for Centos on ``NGINX Oss - Website 01`` at ip address ``10.1.1.8``, and using the ``WEB SHELL`` link, install Agent manually using the instructions:
@@ -91,8 +94,17 @@ Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following 
   # path to aux file dirs can also be added
   config_dirs: "/etc/nginx:/usr/local/etc/nginx:/usr/share/nginx/modules:/etc/nms"
 
+then turn off selinux (temporarily for this lab, as full configuration for nginx-agent is outside the scope of this lab)
 
-and then do ``systemctl restart nginx agent``
+do 
+``setenforce 0``
+
+and then do 
+``systemctl restart nginx-agent``
+
+``systemctl status nginx-agent``
+
+Make sure nginx-agent is running.
 
 Step 1 ( Only if not Centos)
 ------
