@@ -109,10 +109,10 @@ and then do
 
 Make sure nginx-agent is running.
 
-Stop Here and move to the next lesson if using Centos
+Stop Here and skip to the next lesson if using Centos
 ------
 
-Step 1 ( Only if not Centos. )
+Step 1 ( only if not Centos )
 ------
 We are going to use NGINX Plus - 3 Server 10.1.1.9 and install the nginx-agent to manage the NGINX instances running on this host. Access the deployment tab and select the NGINX Plus – 3 Server Access menu then click WEB SHELL.
 
