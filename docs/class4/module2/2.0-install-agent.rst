@@ -8,10 +8,19 @@ Objective
 
 Install the ``nginx-agent`` and configure it to work with existing NGINX instance.
 
+
+Guide
+=====
+
+Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/getting-started/agent/>`__ 
+follows a process that is very similar to installing 
+`NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
+
 Note: Only for Centos, install Agent manually using the instructions.
 Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
-``
+.. code-block:: bash
+
 #
 # /etc/nginx-agent/nginx-agent.conf
 #
@@ -76,14 +85,8 @@ metrics:
 # OSS NGINX default config path
 # path to aux file dirs can also be added
 config_dirs: "/etc/nginx:/usr/local/etc/nginx:/usr/share/nginx/modules:/etc/nms"
-``
 
-Guide
-=====
 
-Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/getting-started/agent/>`__ 
-follows a process that is very similar to installing 
-`NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
 
 Step 1
 ------
