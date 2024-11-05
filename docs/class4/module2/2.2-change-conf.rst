@@ -17,9 +17,7 @@ Guide
 Step 1: Preparations
 --------------------
 
-To follow this Exercise we need to open a few windows in the browser and terminal.
-
-Navigate to the UDF Instances and look for ``NGINX OSS - website-02``.  Select 
+Navigate to the UDF Instances and look for ``NGINX OSS - website-01``.  Select 
 the ``ACCESS`` dropdown and open the ``WEBSITE HTTP`` selection.
 
 A default web page that shows NGINX stats will appear.
@@ -30,7 +28,13 @@ Finally, make sure you have the NGINX Instance Manager user interface open.
 
 .. image:: ./UI-home.png
 
-Click under modules, then instances and click under actions edit config on ``website-02``
+Click under modules, then ``Instance Groups`` and choose the instance group ``website``
+
+Both ``website-01`` and ``website-02`` are in this instance group.
+
+The config applies to both of them, to keep them in sync.
+
+Edit the config.
 
 You should see an editor pane and an ``nginx.conf`` file displayed.
 
