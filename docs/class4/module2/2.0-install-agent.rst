@@ -94,12 +94,15 @@ Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following 
   # path to aux file dirs can also be added
   config_dirs: "/etc/nginx:/usr/local/etc/nginx:/usr/share/nginx/modules:/etc/nms"
 
-then turn off selinux (temporarily for this lab, as full configuration for nginx-agent is outside the scope of this lab)
+Selinux is going to block nginx-agent, so we need to temporarily  turn off selinux (temporarily for this lab, as full configuration for nginx-agent is outside the scope of this lab)
 
 do 
+
+
 ``setenforce 0``
 
 and then do 
+
 ``systemctl restart nginx-agent``
 
 ``systemctl status nginx-agent``
