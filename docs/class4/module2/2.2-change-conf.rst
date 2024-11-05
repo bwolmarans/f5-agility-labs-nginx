@@ -19,25 +19,18 @@ Step 1: Preparations
 
 To follow this Exercise we need to open a few windows in the browser and terminal.
 
-Navigate to the UDF Instances and look for ``NGINX Plus - 3``.  Select 
-the ``ACCESS`` dropdown and open the ``SAMPLE WEB PAGE`` selection.
+Navigate to the UDF Instances and look for ``NGINX OSS - website-02``.  Select 
+the ``ACCESS`` dropdown and open the ``WEBSITE HTTP`` selection.
 
-.. image:: ./UDF-nginx5-sample.png
-
-A default web page that says ``Welcome to CentOS`` should appear.
-
-.. image:: ./UDF-nginx5-welcome.png
+A default web page that shows NGINX stats will appear.
 
 Leave this webpage open in a tab and navigate back to the UDF environment.
-
 
 Finally, make sure you have the NGINX Instance Manager user interface open. 
 
 .. image:: ./UI-home.png
 
-Click under modules, then instances and click under actions edit config on Ubuntu.
-
-.. image:: ./UI-edit.png
+Click under modules, then instances and click under actions edit config on ``website-02``
 
 You should see an editor pane and an ``nginx.conf`` file displayed.
 
@@ -55,60 +48,36 @@ Scroll to the default location block and look for
 the ``index index.html;`` line.
 
 .. code-block:: nginx
-    :emphasize-lines: 8,9
+    :emphasize-lines: 3
 
-    server {
-        listen 0.0.0.0:8081;
-        server_name default_server;
-
-        location / {
-            root /usr/share/nginx/html;
-            index index.html;
-            # index sample.html; #  Page with lots of info
-        }
-
+    location / {
+        root   /usr/share/nginx/html;
+        index  demo_index.html index.html index.htm;
     }
 
-``sample.html`` is a file that displays some gibberish and will replace 
-the default website.  This is a very common operation and can be used to test 
-new web pages very easily.  We want to replace the default ``Welcome to CentOS`` 
-page with our new ``sample.html``.
 
-To do this, we need to comment and uncomment two lines.
-We want to comment the ``index index.html;`` line and uncomment the 
-``index sample.html;`` line to switch the default page.
+You need to replace the default page with our new ``lab.html``.
 
-The ``default.conf`` should look like this
+To do this, change the location block to the following:
 
 .. code-block:: nginx
-    :emphasize-lines: 8,9
+    :emphasize-lines: 3
 
-    server {
-        listen 0.0.0.0:8081;
-        server_name default_server;
-
-        location / {
-            root /usr/share/nginx/html;
-            # index index.html;
-            index sample.html; #  Page with lots of info
-        }
-
+    location / {
+        root   /usr/share/nginx/html;
+        index  lab.html demo_index.html index.html index.htm;
     }
 
-Click the ``Save as`` button at the top then use ubuntu as the name then click save.
-
-.. image:: ./UI-nginx5-save.png
+Click the ``Save as`` button at the top then use ``website-02-lab`` as the name then click save.
 
 Step 3: Publish the new website
 -------------------------------
 
-Now switch tabs to the ``Sample Web Page`` and refresh the page.
-
-.. image:: ./UDF-nginx5-welcome.png
+Now switch tabs to the ``WEBSITE HTTP`` and refresh the page.
 
 It should not have changed because we did not publish the change yet.
-This is because we just stored the change in the database and didn't push 
-it to the isntance yet.  The agent server connection uses bidirectional gRPC 
+This is because we just stored the change in the NIM database and didn't push 
+it to the instance yet.  The agent server connection uses bidirectional gRPC 
 to enable ways to publish changes, but we only publish the change from the 
 editor when the publish button is selected.
 
@@ -116,14 +85,17 @@ Go back to the editor and click the ``Publish`` button.
 
 .. image:: ./UI-nginx5-publish.png
 
-Now quickly switch to the tab for the ``Sample Web Page`` and hit refresh.
-The page should now look like the picture below.
+Now switch to the tab for the ``Sample Web Page`` and hit refresh.
 
-.. image:: ./UDF-nginx5-custom.png
+The page will now show the Lab.html contents.
 
-When you published the changes, the NGINX Instance Manager server pushed the 
-saved configuration (from the database) to the instance to load and triggered
-an NGINX reload.
+When you published the changes, the NGINX Instance Manager server the following took place:
+
+1. NIM pushed the saved configuration (from the database) to Agent on instance listening on HTTPS gRPC. 
+2. The Agent applied the configuration to NGINX, and did a ``nginx -t`` to test the configuration
+3. The configuration passed the test
+4. Agent then instructs NGINX to reload ``nginx -s reload`` 
+5. NGINX reloads with the new configuration
 
 The editing actions are designed to mimic what NGINX does by saving files and 
 then publishing them in two different actions.
@@ -139,7 +111,7 @@ then publishing them in two different actions.
 Step 4: Adding files
 --------------------
 
-For this step, we are going to use the editor and the Web Shell for ``NGINX Plus - 3``.
+For this step, we are going to use the editor and the Web Shell for ``NGINX OSS - website-02``.
 
 In the editor click the icon ``Add File``.
 
