@@ -16,10 +16,10 @@ Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/gett
 follows a process that is very similar to installing 
 `NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
 
-Centos
+Centos 7
 ------
 
-Note: Because Centos is deprecated, special steps are needed.
+Note: Because Centos 7 went end of life June 2024, special steps are needed.
 
 Only for Centos on ``NGINX Oss - Website 01`` at ip address ``10.1.1.8``, and using the ``WEB SHELL`` link, install Agent manually using the instructions:
 
