@@ -83,8 +83,6 @@ editor when the publish button is selected.
 
 Go back to the editor and click the ``Publish`` button.
 
-.. image:: ./UI-nginx5-publish.png
-
 Now switch to the tab for the ``Sample Web Page`` and hit refresh.
 
 The page will now show the Lab.html contents.
