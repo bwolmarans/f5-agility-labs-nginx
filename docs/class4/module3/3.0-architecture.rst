@@ -24,7 +24,7 @@ Various Automation and CI/CD pipelines can use the NIM API to perform various ac
 
 NIM offers options to feed data and metrics to external platforms like Prometheus and visualization tools like Grafana.
 
-.. image:: ./NIM-diagram.jpeg
+.. image:: ./NIM-diagram2.jpeg
 
 
 Step 1
