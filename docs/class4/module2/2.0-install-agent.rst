@@ -24,7 +24,7 @@ Step 1 - Install on Centos 7
 
 TLDR;
 
-Centos 7 is unsupported, but we have two boxes in the lab.
+Centos 7 is unsupported, but we have two boxes running Centos 7 and NGINX OSS in the lab.
 The normal install method won't work.
 There is a detailed install at the bottom of this page, but in the interests of time, NGINX Agent is already installed, you just have to start NGINX Agent.
 
