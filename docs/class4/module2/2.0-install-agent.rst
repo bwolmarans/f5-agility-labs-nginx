@@ -6,7 +6,9 @@ Exercise 2.0: Installing NGINX Agent
 Objective
 =========
 
-Install the ``nginx-agent`` and configure it to work with existing NGINX instance.
+Recall from the Introduction, overview, and Architecture, Instance Manager relies on NGINX Agent to manage NGINX instances.
+
+Install ``nginx-agent`` and configure it to work with existing NGINX instance.
 
 
 Guide
@@ -15,6 +17,21 @@ Guide
 Installation of `NGINX Agent <https://docs.nginx.com/nginx-instance-manager/getting-started/agent/>`__ 
 follows a process that is very similar to installing 
 `NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
+
+TLDR;
+------
+
+Centos 7 is unsupported, but we have two boxes in the lab.
+The normal install method won't work.
+
+So, only for the Centos 7 systems:
+
+``NGINX Oss - Website 01`` at ip address ``10.1.1.8``
+
+``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
+
+Use the ``WEB SHELL`` link and do ``systemctl start nginx-agent``
+
 
 Centos 7
 ------
