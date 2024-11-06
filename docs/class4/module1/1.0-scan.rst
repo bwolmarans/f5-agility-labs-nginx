@@ -27,8 +27,7 @@ Step 1: Open UI
 Navigate to the UDF dashboard for the lab and open the NGINX Manager instance, selecting 
 the ``Instance Manager UI`` option under ``ACCESS``.
 
-.. image:: ./install-nim.jpg
-
+.. image:: ./nim-ui.jpg
 
 To sign in use the username ``admin`` and password ``NIM123!@#``
 
