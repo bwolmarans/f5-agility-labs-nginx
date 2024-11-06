@@ -64,9 +64,6 @@ some information on the screen as the scan runs.
 
 .. image:: ./UI-scan-running.png
 
-.. image:: ./UI-scan-complete.png
-
-
 Once it is complete, you should see a list of instances underneath the two panels.
 
 .. image:: ./UI-scan-results.png
@@ -77,9 +74,7 @@ Step 4: Review results
 The results of the scan have more instances than we described in the lab architecture.  
 UDF. 
 
-You should also notice there is an outdated NGINX server on ``10.1.1.8`` running NGINX ``1.6.0``. 
-The CVEs icon shows an exclamation point within a yellow circle.  This indicates the instance has 
-security vulnerabilities. At the time of this writing, it should show ``4`` next to the icon.
+Scroll to the right to see CVE's and if an instance is Managed or Unmanaged.
 
 .. image:: ./UI-scan-cve.png
 
@@ -89,8 +84,9 @@ vulnerabilities in your environment.
 .. note::
 
    NGINX Instance Manager scan uses the published CVE list for NGINX and matches the version to
-   the applicable CVEs.  If a CVE is unscored we do not count it.  You can see a list of the CVEs 
-   by viewing the `public CVE list <http://nginx.org/en/security_advisories.html>`__ .
+   the applicable CVEs.
+
+   You can see a list of the CVEs  by viewing the `public CVE list <http://nginx.org/en/security_advisories.html>`__ .
 
 
 Step 5: View install instructions
