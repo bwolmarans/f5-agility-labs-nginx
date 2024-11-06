@@ -8,7 +8,7 @@ Objective
 
 Understand how NGINX Instance Manager handles network traffic 
 and communications. Learn different options for securing traffic 
-externally and for agent and server communication.
+externally and for agent and server communication. 
 
 Guide
 =====
