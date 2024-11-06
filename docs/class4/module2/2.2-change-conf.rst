@@ -30,6 +30,9 @@ Finally, make sure you have the NGINX Instance Manager user interface open.
 
 Click under modules, then ``Instance Groups`` and choose the instance group ``website``
 
+
+.. image:: ./nim-instance-groups.jpg
+
 Both ``website-01`` and ``website-02`` are in this instance group.
 
 The config applies to both of them, to keep them in sync.
