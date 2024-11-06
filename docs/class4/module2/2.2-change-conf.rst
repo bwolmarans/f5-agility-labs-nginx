@@ -17,12 +17,12 @@ Guide
 Step 1: Preparations
 --------------------
 
-Navigate to the UDF Instances and look for ``NGINX OSS - website-01``.  Select 
-the ``ACCESS`` dropdown and open the ``WEBSITE HTTP`` selection.
+Navigate to the UDF Instances in your course and look for ``NGINX OSS - website-01``.  Select 
+the ``ACCESS`` dropdown and open the ``WEBSITE HTTP`` selection.  Do this for ``NGINX OSS - website-02`` also.
 
 A default web page that shows NGINX stats will appear.
 
-Leave this webpage open in a tab and navigate back to the UDF environment.
+Leave these tabs open and navigate back to the UDF environment.
 
 Finally, make sure you have the NGINX Instance Manager user interface open. 
 
@@ -87,7 +87,8 @@ editor when the publish button is selected.
 
 Go back to the editor and click the ``Publish`` button.
 
-Now switch to the tab for the ``Sample Web Page`` and hit refresh.
+Navigate to the UDF Instances in your course and look for ``NGINX OSS - website-01``.  Select 
+the ``ACCESS`` dropdown and open the ``WEBSITE HTTP`` selection.  Do this for ``NGINX OSS - website-02`` also.
 
 The page will now show the Lab.html contents.
 
@@ -99,16 +100,6 @@ When you published the changes, the NGINX Instance Manager server the following 
 4. Agent then instructs NGINX to reload ``nginx -s reload`` 
 5. NGINX reloads with the new configuration
 
-The editing actions are designed to mimic what NGINX does by saving files and 
-then publishing them in two different actions.
-
-.. note::
-
-    Try to revert and redo the change and see if you can refresh the page before 
-    the change is made.  With the default polling at 1s, you need to be very quick.
-    NGINX Instance Manager will likely be much faster at making changes than 
-    existing automation tools but you do not have to use NGINX Instance Manager to 
-    make changes, you can use your own tooling or a combination of the two.
 
 Step 4: Adding files
 --------------------
@@ -117,7 +108,7 @@ For this step, we are going to use the editor and the Web Shell for ``NGINX OSS 
 
 In the editor click the icon ``Add File``.
 
-.. image:: ./UI-nginx5-add.png
+.. image:: ./nim-instance-groups.jpg
 
 Add a new file called ``test.conf`` in the window and click ``Create``.
 
