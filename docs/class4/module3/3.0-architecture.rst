@@ -26,43 +26,6 @@ NIM offers options to feed data and metrics to external platforms like Prometheu
 
 .. image:: ./NIM-diagram2.jpeg
 
+Here is another view of the same Architecture, to help make it clear:
 
-Step 1
-------
-
-Navigate to the ``nginx-manager`` instance as ``ubuntu`` and use the home directory.
-
-Use the SSH menu option to beceome the ubuntu user.  If you use the web-shell it 
-defaults to the root user.  To follow best practice, please use the ubuntu user.
-
-.. image:: ./Access-SSH.jpg
-
-If prompted, select yes for trusting the ssh connection in your terminal.
-
-.. image:: ./Add-SSH.png
-
-``NOTE: If you haven't added SSH keys to UDF - Use the WebShell``
-
-.. image:: ./Access-SSH-2.jpg
-
-Step 2: Review the ports used
------------------------------
-
-Let's use netstat (you may need to install this on your own system) on the ``nginx-manager`` 
-instance.  We will list all ports and the processes, then use grep to filter the list.
-
-  sudo netstat -tulpn | grep nginx
-
-  tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      726/nginx: master p\:\:
-
-Nginx Instance Manager ingests data from the agents and exposes the UI via TCP 443.
-
-For documentation see: https://docs.nginx.com/nginx-instance-manager/about/technical-specifications/
-
-Nginx Instance Manager also uses ClickHouse as an analytics time-series database. 
-
-For documentation on ClickHouse see here: https://docs.nginx.com/nginx-instance-manager/admin-guide/configure-clickhouse/
-
-
-
-
+.. image:: ./arch-high-level.png
