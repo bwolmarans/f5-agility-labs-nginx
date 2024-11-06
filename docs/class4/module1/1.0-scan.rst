@@ -97,4 +97,8 @@ Click on any of the “Unmanaged” instances and a slide out dialog box will pr
 
 .. image:: ./UI-scan-install.png
 
+
+
 For module 2, we will focus on managing instances.
+
+Go back to the instructions and go to the first lesson in module 2.
