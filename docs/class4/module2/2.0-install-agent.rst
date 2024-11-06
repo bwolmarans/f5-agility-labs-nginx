@@ -19,22 +19,7 @@ follows a process that is very similar to installing
 `NGINX Plus <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/>`__.
 
 
-Step 1 - Install on Centos 7 
-------
 
-TLDR;
-
-Centos 7 is unsupported, but we have two boxes running Centos 7 and NGINX OSS in the lab.
-The normal install method won't work.
-There is a detailed install at the bottom of this page, but in the interests of time, NGINX Agent is already installed, you just have to start NGINX Agent.
-
-So, only for the Centos 7 systems:
-
-``NGINX Oss - Website 01`` at ip address ``10.1.1.8``
-
-``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
-
-Use the ``WEB SHELL`` link and do ``systemctl start nginx-agent``
 
 Step 1 - Install on NGINX Plus - app-pdx-01 
 ------
@@ -86,6 +71,23 @@ Our instances are named according to the Operating System and NGINX type they ru
 Let's focus on the instance ``app-pdx-01`` and click the Hostname and more information on the instance will appear, scroll down to Network Interface and notice this is our 10.1.1.5 instance.
 
 Click the instances tab to return to the instances list.
+
+Step 4 - Install on Centos 7 
+------
+
+TLDR;
+
+Centos 7 is unsupported, but we have two boxes running Centos 7 and NGINX OSS in the lab.
+The normal install method won't work.
+There is a detailed install at the bottom of this page, but in the interests of time, NGINX Agent is already installed, you just have to start NGINX Agent.
+
+So, only for the Centos 7 systems:
+
+``NGINX Oss - Website 01`` at ip address ``10.1.1.8``
+
+``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
+
+Use the ``WEB SHELL`` link and do ``systemctl start nginx-agent``
 
 Centos 7 Detailed Install (optional)
 ------
