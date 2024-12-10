@@ -93,6 +93,12 @@ So, only for the Centos 7 systems:
 
 Use the ``WEB SHELL`` link and do ``systemctl start nginx-agent``
 
+Make sure nginx-agent is running:
+
+
+``systemctl status nginx-agent``
+
+~~ 
 Centos 7 Detailed Install (optional)
 ------
 
@@ -193,4 +199,4 @@ and then do
 
 Make sure nginx-agent is running.
 
-
+~~ ~~
