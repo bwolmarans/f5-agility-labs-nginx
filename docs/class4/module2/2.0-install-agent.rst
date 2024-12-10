@@ -100,7 +100,6 @@ Use the ``WEB SHELL`` link and do
 
 ``systemctl status nginx-agent``
 
-~~ 
 Centos 7 Detailed Install (optional)
 ------
 
@@ -190,7 +189,6 @@ Selinux is going to block nginx-agent, so we need to temporarily  turn off selin
 
 do 
 
-
 ``setenforce 0``
 
 and then do 
@@ -201,4 +199,4 @@ and then do
 
 Make sure nginx-agent is running.
 
-~~ ~~
+
