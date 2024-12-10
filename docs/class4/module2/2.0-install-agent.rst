@@ -95,7 +95,9 @@ Use the ``WEB SHELL`` link and do
 
 
 ``setenforce 0``
+
 ``systemctl start nginx-agent``
+
 ``systemctl status nginx-agent``
 
 ~~ 
