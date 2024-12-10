@@ -91,11 +91,11 @@ So, only for the Centos 7 systems:
 
 ``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
 
-Use the ``WEB SHELL`` link and do ``systemctl start nginx-agent``
-
-Make sure nginx-agent is running:
+Use the ``WEB SHELL`` link and do 
 
 
+``setenforce 0``
+``systemctl start nginx-agent``
 ``systemctl status nginx-agent``
 
 ~~ 
