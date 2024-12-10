@@ -34,7 +34,9 @@ This install command uses the domain name for the UDF lab.
 
 .. note::
 
-   This command has been adjusted around this lab's unique network environment. *** Please use the command below and not the command (with the UDF FQDN URL) from the NIM UI Status page.***
+   This command has been adjusted around this lab's unique network environment. 
+
+*** You MUST use the command below and not the command (with the UDF FQDN URL) from the NIM UI Status page.***
 
 Open ``WEB SHELL`` on ``NGINX Plus - app-pdx-01`` and do
 
