@@ -75,8 +75,8 @@ Add the following above the events context:
     :emphasize-lines: 13,14
 
     # For more information on configuration, see:
-    #   * Official English Documentation: http://nginx.org/en/docs/
-    #   * Official Russian Documentation: http://nginx.org/ru/docs/
+    #   * Official OSS Documentation: https://nginx.org/en/docs/
+    #   * Official NGINX Plus Documentation: https://docs.nginx.com/
 
     user nginx;
     worker_processes auto;
