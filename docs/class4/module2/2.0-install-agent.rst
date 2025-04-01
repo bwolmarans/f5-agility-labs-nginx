@@ -81,7 +81,8 @@ Step 4 - Install on Centos 7
 
 TLDR;
 
-Centos 7 is unsupported by Red Hat, so normal updates from Red Hat will not work.  
+Centos 7  went end of life June 2024 and is unsupported by Red Hat and therefore is unsupported by NGINX Instance Manager.
+So a normal of Agent will not work.  
 However we have two boxes running Centos 7 and NGINX OSS in the lab.
 So we would need to do a workaround.
 There is a detailed install at the bottom of this page, but in the interests of time, NGINX Agent is already installed, you just have to start NGINX Agent.
@@ -101,21 +102,7 @@ Use the ``WEB SHELL`` link and do
 
 ``systemctl status nginx-agent``
 
-Centos 7 Detailed Install (optional)
-------
-
-Note: Because Centos 7 went end of life June 2024, NIM has dropped support also.  For this lab, we can still use Centos 7, but special steps are needed.
-
-Only for the following Centos systems:
-
-``NGINX Oss - Website 01`` at ip address ``10.1.1.8``
-
-``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
-
-
-Use the ``WEB SHELL`` link to install Agent manually using the instructions:
-
-https://docs.nginx.com/nginx-agent/installation-upgrade/installation-oss/#installing-nginx-agent-on-rhel-centos-rocky-linux-almalinux-and-oracle-linux
+Reference: https://docs.nginx.com/nginx-agent/installation-upgrade/installation-oss/#installing-nginx-agent-on-rhel-centos-rocky-linux-almalinux-and-oracle-linux
 
 Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
