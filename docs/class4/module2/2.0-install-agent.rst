@@ -81,8 +81,9 @@ Step 4 - Install on Centos 7
 
 TLDR;
 
-Centos 7 is unsupported, but we have two boxes running Centos 7 and NGINX OSS in the lab.
-The normal install method won't work.
+Centos 7 is unsupported by Red Hat, so normal updates from Red Hat will not work.  
+However we have two boxes running Centos 7 and NGINX OSS in the lab.
+So we would need to do a workaround.
 There is a detailed install at the bottom of this page, but in the interests of time, NGINX Agent is already installed, you just have to start NGINX Agent.
 
 So, only for the Centos 7 systems:
