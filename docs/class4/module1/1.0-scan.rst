@@ -1,4 +1,4 @@
-.. _1.0-scan:
+ .. _1.0-scan:
 
 Exercise 1.0: Acces the NIM UI and scan for instances
 #####################################################
@@ -90,9 +90,9 @@ Under the status column there are two states “Managed” and “Unmanaged”.
 .. image:: ./scan.png
 
 Click on on the “Unmanaged” instance 10.1.1.5 and a slide out dialog box will provide you with instructions on how to install the nginx-agent on the server. 
+WAIT! Do not install this yet. 
 
 .. image:: ./UI-scan-install.png
-
 
 For module 2, we will focus on managing instances.
 
