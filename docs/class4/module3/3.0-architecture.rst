@@ -26,6 +26,3 @@ NIM offers options to feed data and metrics to external platforms like Prometheu
 
 .. image:: https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module3/NIM-diagram2.jpg
 
-Here is another view of the same Architecture, to help make it clear:
-
-.. image:: ./arch-high-level.png
