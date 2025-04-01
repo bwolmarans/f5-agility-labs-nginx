@@ -1,4 +1,4 @@
-.. _2.0-install-agent:
+ .. _2.0-install-agent:
 
 Exercise 2.0: Installing NGINX Agent
 ####################################
@@ -93,18 +93,9 @@ So, only for the Centos 7 systems:
 
 ``NGINX Oss - Website 02`` at ip address ``10.1.1.7``
 
-Use the ``WEB SHELL`` link and do 
+Use the ``WEB SHELL`` link and do the following: 
 
-
-``setenforce 0``
-
-``systemctl start nginx-agent``
-
-``systemctl status nginx-agent``
-
-Reference: https://docs.nginx.com/nginx-agent/installation-upgrade/installation-oss/#installing-nginx-agent-on-rhel-centos-rocky-linux-almalinux-and-oracle-linux
-
-Then edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
+Edit the /etc/nginx-agent/nginx-agent.conf file to have only the following content:
 
 .. code-block:: nginx
 
@@ -185,6 +176,6 @@ and then do
 
 ``systemctl status nginx-agent``
 
-Make sure nginx-agent is running.
+And make sure nginx-agent is running.
 
 
