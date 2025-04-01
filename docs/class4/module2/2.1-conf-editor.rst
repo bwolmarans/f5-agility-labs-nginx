@@ -135,4 +135,4 @@ commands).  When we click ``Revert``, we tell ``nginx-agent`` to refresh the con
 in the database.  Due to the gRPC communication between the server and agent, we can do this from 
 the server on-demand.
 
-
+`Proceed to the Next Lesson <https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module2/2.2-change-conf.rst>`_
