@@ -76,7 +76,5 @@ Let's focus on the instance ``app-pdx-01`` and click the Hostname and more infor
 
 Click the instances tab to return to the instances list.
 
-https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module2/2.1-conf-editor.rst
-
 `Proceed to the Next Lesson <https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module2/2.1-conf-editor.rst>`__
 
