@@ -96,5 +96,5 @@ WAIT! Do not install this yet.
 
 For module 2, we will focus on managing instances.
 
-Proceed to the next lesson: [Next Lesson](https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module2/2.0-install-agent.rst)
+Proceed to the next lesson: [Next Lesson(https://github.com/bwolmarans/f5-agility-labs-nginx/blob/develop/docs/class4/module2/2.0-install-agent.rst)]
 
