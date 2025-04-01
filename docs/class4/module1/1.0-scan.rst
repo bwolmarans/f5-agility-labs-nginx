@@ -12,9 +12,8 @@ Manager.
 Guide
 =====
 
-The lab environment contains 5 instances of NGINX (not including the 
-repository server and the nginx-manager server). We will use the ``NIM Scan`` feature
-to discover the instances and list CVE information.
+The lab environment contains some NGINX instances that are not yet connected to NIM. We will use the ``NIM Scan`` feature
+to discover the instances, add them to NIM, and find any CVE's in them.
 
 The scan uses NMAP stealth scan to look at ports the web servers or load balancers 
 listen on.  This is an optional component of nginx-manager but can be useful to 
