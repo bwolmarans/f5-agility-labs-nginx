@@ -76,8 +76,10 @@ Let's focus on the instance ``app-pdx-01`` and click the Hostname and more infor
 
 Click the instances tab to return to the instances list.
 
-Step 4 - Install on Centos 7 
+Step 4 - OPTIONAL: Install on Centos 7 
 ------
+
+NOTE: You can skip this unless you want to understand specifically how to install on Centos 7 or other unsupported operating systems.
 
 TLDR;
 
